@@ -350,11 +350,10 @@ footer {
 
 
 
-
-
-
 @media all and (max-width : 458px) {
-
+  .container {
+    margin-right: 20px !important;
+    }
 
 .switch {
   width: 20%;
@@ -396,7 +395,7 @@ nav ul li a {
   
   
   .container .about-content {
-    height: 1000px !important;
+    height: 1150px !important;
    
   }
 
@@ -531,17 +530,6 @@ nav ul li a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 @media all and (max-width: 1024px){
 
   .container {
@@ -596,9 +584,10 @@ nav ul li a {
   }
   
   .hardware-videos{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
   }
 
   
@@ -682,6 +671,7 @@ nav ul li a {
   display: flex;
   justify-content: center;
   padding: 20px;
+  gap: 30px;
 }
 
 
