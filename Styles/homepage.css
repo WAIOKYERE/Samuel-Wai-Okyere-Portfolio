@@ -270,17 +270,23 @@ transition: all 0.2s;
   text-align: center;
 }
 
+.portfolio-item a{
+  color: rgb(4, 0, 255);
+}
+
 .portfolio-item img {
   width: 100%;
   height: auto;
 }
 
 .hardware-videos{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
 }
 
-video {
+video , iframe {
   width:480px;
   height:315px;
 }
