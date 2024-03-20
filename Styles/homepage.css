@@ -13,6 +13,10 @@ body {
   display: block;
 }
 
+.logoContainer a{
+  text-decoration: none;
+}
+
 .container .logo{
   color: rgb(114, 107, 107);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
@@ -29,7 +33,12 @@ body {
 
 .container .logo:hover{
 
-  color: rgb(255, 255, 255);
+  color: rgb(56, 50, 50);
+}
+
+.container .logo:hover::first-letter{
+
+  color: rgb(32, 29, 29);
 }
 
 
@@ -50,6 +59,27 @@ nav {
   align-items: center;
 }
 
+.menu-icon{
+  display:none ;
+  flex-direction: column;
+  width: 35px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.menu-icon .span-style{
+  display: none;
+  background-color:rgb(65, 19, 107);
+  width: 100%;
+  height: 5px;
+  margin: 5px 0px;
+  border-radius: 10%;
+}
+
+.active{
+  display: block;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -64,7 +94,7 @@ nav ul li {
 nav ul li a {
   color: #000000;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter Tight", sans-serif;
   font-weight: 500;
 }
 
@@ -356,185 +386,6 @@ footer {
 
 
 
-@media all and (max-width : 458px) {
-  .container {
-    margin-right: 20px !important;
-    }
-
-.switch {
-  width: 20%;
-  height: 30px;
-}
-
-nav ul {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  margin-left: 10px;
-}
-
-nav ul li {
-  margin-right: 10px;
-}
-
-nav ul li a {
-  font-size: 1rem;
-}
-
-
-  .hero .container .hero-content .hero-message {
-    height: 900px !important;
-    flex-direction: column;
-    width: 100%;
-    padding: 10px !important;
-  }
-
-  .hero .container .hero-content .hero-message .text {
-    width: 100% !important;
-    order:2;
-  }
-  
-  .hero .container .hero-content .hero-message img{
-    width: 250px !important;
-    order: -1px !important;
-    margin: auto !important;
-  }
-  
-  
-  .container .about-content {
-    height: 1150px !important;
-   
-  }
-
-  .container .about-content img{
-    width: 250px !important;
-  }
-
-
-  
-  .hardware-videos{
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center ;
-  }
-
-  video {
-    width: 400px !important;
-}
-  .contactContent{
-    flex-direction: column;
-    width: 100%;
-    margin: auto !important;
-    margin-bottom: 20px;
-    padding-top: 20px;
-  }
-    
-
-}
-
-
-
-
-
-
-@media (max-width : 768px) {
-  
-  .container {
-    max-width: 100%;
-  }
-
-  
-  header {
-    background-image: url(../Resources/Images/gold\ bg\ 2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-
-  .hero .container .hero-content .hero-message {
-    height: 500px;
-  }
-  
-  .hero .container .hero-content .hero-message img{
-    width: 350px;
-  }
-  
-  
-  .container .about-content{
-    background-image: url(../Resources/Images/Intersect.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    height: 900px;
-    width: 100%;
-    padding-top: 10px;
-  }
-  
-  
-  .container .about-content img{
-    width: 350px;
-  }
-
-  .container .about-content .about-text{
-    width: 90%;
-   
-  }
-  
-  
-  .hardware-videos{
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center ;
-  }
-  
-  .contactContent{
-    flex-direction: column;
-    width: 100%;
-    margin: auto !important;
-    margin-bottom: 20px;
-    padding-top: 20px;
-  }
-  
-  
-  .contactContent .contactMessage{
-    width: 100%;
-    padding: 0px;
-    font-size: 1.3rem;
-    line-height: 1.4;
-  }
-  
-  
-  footer {
-    background-image: url(../Resources/Images/gold\ bg\ 2.jpg);
-    background-size: cover;
-  }
-  
-  .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .footer-message {
-    margin: auto;
-  }
-  
-  .footer-image img {
-    margin-right: 80px !important;
-  }
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media all and (max-width: 1024px){
 
@@ -556,15 +407,17 @@ nav ul li a {
   
   .hero .container .hero-content .hero-message .text{
       width: 50%;
+      padding-bottom: 40px;
   }
    
   .container .about-content {
-    height: 900px;
+    height: 600px;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 0px;
     margin-bottom: 30px;
   }
 
+ 
   .container .about-content .about-text{
     width: 100%;
     font-size: 1.2rem;
@@ -685,3 +538,236 @@ nav ul li a {
   margin-right: 100px;
 }
 }
+
+
+
+
+
+
+
+
+
+@media (max-width : 768px) {
+  
+  body > header > div > nav > div.switch-container{
+    display: none;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  nav ul{
+    background-color:#302a0dd2;
+    width: 100%;
+    height: 200px;
+  }
+
+  .navLinks{
+    display: none;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 10px 0px 0px 20px;
+  }
+
+
+  .menu-icon{
+    display:block ;
+  }
+  
+  .menu-icon .span-style{
+    display: block;
+  }
+  
+  .active{
+    display: block;
+  }
+
+
+
+  nav ul {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap: 5px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+  }
+  
+  nav ul li {
+  }
+  
+  nav ul li a {
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255) !important;
+  }
+
+
+  
+  
+  header {
+    background-image: url(../Resources/Images/gold\ bg\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  .hero .container .hero-content .hero-message {
+    height: 500px;
+    padding: 5px;   
+  }
+  
+  .hero .container .hero-content .hero-message img{
+    width: 300px;
+  }
+  
+  
+  .container .about-content{
+    background-image: url(../Resources/Images/Intersect.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 100%;
+    padding-top: 10px;
+  }
+  
+  
+  .container .about-content img{
+    width: 350px;
+  }
+
+  .container .about-content .about-text{
+    width: 90%;
+   
+  }
+  
+  
+  .hardware-videos{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center ;
+    text-align: center;
+  }
+  
+  .contactContent{
+    flex-direction: column;
+    width: 80%;
+    margin: auto !important;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  
+  .contactContent .contactMessage{
+    width: 90%;
+    padding: 0px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+  
+  
+  footer {
+    background-image: url(../Resources/Images/gold\ bg\ 2.jpg);
+    background-size: cover;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .footer-message {
+    margin: auto;
+  }
+  
+  .footer-image img {
+    margin-right: 80px !important;
+  }
+  
+}
+
+
+
+
+
+
+
+
+@media all and (max-width : 458px) {
+  .container {
+    margin-right: 20px !important;
+    }
+
+.switch {
+  width: 20%;
+  height: 30px;
+}
+
+
+  .hero .container .hero-content .hero-message {
+    height: 900px !important;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px !important;
+  }
+
+  .hero .container .hero-content .hero-message .text {
+    width: 100% !important;
+    order:2;
+  }
+  
+  .hero .container .hero-content .hero-message img{
+    width: 250px !important;
+    order: -1px !important;
+    margin: auto !important;
+  }
+  
+  
+  .container .about-content {
+    height: 1150px !important;
+   
+  }
+
+  .container .about-content img{
+    width: 250px !important;
+  }
+
+
+  
+  .hardware-videos{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center ;
+  }
+
+ 
+
+video, iframe{
+      width: 400px;
+    height: 315px;
+}
+
+
+  .contactContent{
+    flex-direction: column;
+    width: 80%;
+    margin: auto !important;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+    
+
+}
+
+
+
+
+
+
+
+
+
