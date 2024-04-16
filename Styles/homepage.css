@@ -18,15 +18,14 @@ body {
 }
 
 .container .logo{
-  color: rgb(114, 107, 107);
+  color:#d700ffff;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
   font-size: 2.2rem;
   text-decoration: none;
-  width: fit-content;
 }
 
 .container .logo::first-letter{
-  color: blueviolet;
+  color:rgb(132, 12, 153);
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-decoration:underline;
 }
@@ -53,6 +52,10 @@ header {
   z-index: 1000;
 }
 
+.navLinks{
+  display: block ;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -69,16 +72,13 @@ nav {
 
 .menu-icon .span-style{
   display: none;
-  background-color:rgb(65, 19, 107);
+  background-color:rgb(156, 19, 180);
   width: 100%;
   height: 5px;
   margin: 5px 0px;
   border-radius: 10%;
 }
 
-.active{
-  display: block;
-}
 
 nav ul {
   list-style: none;
@@ -92,14 +92,18 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #000000;
+  color:rgb(0, 0, 0);
   text-decoration: none;
   font-family: "Inter Tight", sans-serif;
-  font-weight: 500;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
 }
 
 nav ul li a:hover {
-  color: #000;
+  color:rgb(156, 19, 180);
+
 }
 
 
@@ -166,7 +170,7 @@ input:checked + .slider:before {
 
 .hero .container .hero-content .hero-message{
   width: 100%;
-  height: fit-content;
+  height: auto;
   margin-top: 20px;
   padding: 20px;
   border-radius: 20px;
@@ -236,6 +240,10 @@ input:checked + .slider:before {
 }
 
 
+.container .comment_1 .marginLeft {
+  margin-left: 20px;
+}
+
 .container .comment_1 .button {
   color: rgb(255, 255, 255);
   background-color: rgba(192, 1, 255, 0.849);
@@ -294,9 +302,6 @@ transition: all 0.2s;
   grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   justify-items: center;
-}
-
-.portfolio-item {
   text-align: center;
 }
 
@@ -306,7 +311,7 @@ transition: all 0.2s;
 
 .portfolio-item img {
   width: 100%;
-  height: auto;
+  height: 200px;
 }
 
 .hardware-videos{
@@ -317,7 +322,7 @@ transition: all 0.2s;
 }
 
 video , iframe {
-  width:480px;
+  width:400px;
   height:315px;
 }
 
@@ -325,7 +330,7 @@ video , iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: fit-content;
+  height: auto;
   width: 60%;
   margin-bottom: 70px;
   padding-top: 20px;
@@ -439,7 +444,7 @@ footer {
   
   .portfolio-item img {
     width: 100%;
-    height: auto;
+    height: 200px;
   }
   
   .hardware-videos{
@@ -550,6 +555,7 @@ footer {
 @media (max-width : 768px) {
   
   body > header > div > nav > div.switch-container{
+    order: 0;
     display: none;
   }
 
@@ -558,7 +564,7 @@ footer {
   }
 
   nav ul{
-    background-color:#302a0dd2;
+    background-color:#e9cd32f3;
     width: 100%;
     height: 200px;
   }
@@ -595,13 +601,15 @@ footer {
     top: 100px;
     right: 0;
   }
-  
-  nav ul li {
-  }
+
   
   nav ul li a {
     font-size: 1.1rem;
-    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
   }
 
 
@@ -742,12 +750,12 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center ;
-  }
+    width: 250px;
 
  
 
 video, iframe{
-      width: 400px;
+      width: 300px;
     height: 315px;
 }
 
@@ -758,6 +766,7 @@ video, iframe{
     margin: auto !important;
     margin-bottom: 20px;
     padding-top: 20px;
+    text-align: center;
   }
     
 

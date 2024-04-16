@@ -7,12 +7,13 @@ window.addEventListener('load', function() {
       if (window.scrollY > hero.offsetHeight) {
         header.classList.add('nav-scroll');
         navLinks.forEach(link => {
-          link.style.color = '#000'; // Change nav link color to black when scrolled
+          link.style.color = '#0028ff'; 
         });
+
       } else {
         header.classList.remove('nav-scroll');
         navLinks.forEach(link => {
-          link.style.color = '#fff'; // Reset nav link color
+          link.style.color = 'black'; 
         });
       }
     });
