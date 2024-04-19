@@ -3,18 +3,17 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" href="./images/My logo 2.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="Author" content="Samuel Wai Okyere" />
   <meta name="Description" content="This is my Personal website to show my numerous works" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./images/My logo 2.png" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samuel Wai Okyere - Portfolio</title>
   <link rel="stylesheet" href="./Styles/homepage.css" />
+  <title>Samuel Wai Okyere - Portfolio</title>
 </head>
 
 <body>
@@ -22,7 +21,9 @@
     <div class="container">
       <nav class="navContainer">
         <div class="logoContainer">
-          <a href="index.html"><h1 class="logo">Wai</h1></a>
+          <a href="index.html">
+            <h1 class="logo">Wai</h1>
+          </a>
         </div>
 
         <div class="navLinks">
@@ -37,7 +38,6 @@
         <div class="switch-container">
           <label class="switch">
             <input type="checkbox" id="theme-toggle" />
-            <!-- <span class="slider round"></span> -->
             <span class="material-symbols-outlined"> light_mode </span>
           </label>
         </div>
@@ -66,8 +66,11 @@
                 cutting Degree in Computer Science,
                 <br> I offer a transformative approach to every project I undertake.
               </p>
-              <br> <a href="./Resources/docs/SAMUEL WAI OKYERE _ CV.pdf" class="button" target="_blank">Download CV</a>
-              <a href="https://waiokyere.github.io/My-CV/" target="_blank" class="button marginLeft">View CV On Web</a>
+              <br>
+              <div class="btnContainer">
+                <a href="./Resources/docs/SAMUEL WAI OKYERE _ CV.pdf" class="button" target="_blank">Download CV</a>
+                <a href="https://waiokyere.github.io/My-CV/" target="_blank" class="button marginLeft">View CV On Web</a>
+              </div>
             </div>
           </div>
           <div class="hero-image">
@@ -83,7 +86,7 @@
       <h2>About Me</h2>
       <div class="about-content">
         <div class="about-image">
-          <img src="./Resources/Images/Me In Smog.png" alt="Random Image" />
+          <img src="./Resources/Images/Me In Smog.png" alt="Wai in smog" />
         </div>
         <div class="about-text">
           <p>
@@ -114,7 +117,7 @@
       </div>
     </div>
   </section>
-  
+
 
   <section id="portfolio" class="section">
     <div class="container">
@@ -136,19 +139,19 @@
 
         <div class="portfolio-item">
           <h3><a href="https://waiokyere.github.io/Simon-Game-Files/"> Simon Game</a></h3>
-          <img src="./Resources/Images/Simon Game Screenshot.png" alt="Project 4"  />
+          <img src="./Resources/Images/Simon Game Screenshot.png" alt="Project 4" />
         </div>
-          
+
         <div class="portfolio-item">
           <h3><a href="https://waiokyere.github.io/Drum/">Drum Game</a></h3>
           <img src="./Resources/Images/Drum Kit.png" alt="Project 5" />
         </div>
-     
+
         <div class="portfolio-item">
           <h3><a href="https://waiokyere.github.io/Dice-Game/">Dice Game</a></h3>
           <img src="./Resources/Images/Dice Game.png" alt="Project 5" />
         </div>
-        
+
         <div class="portfolio-item">
           <h3><a href="https://waiokyere.github.io/Chessboard/">Chess Game</a></h3>
           <img src="./Resources/Images/Chess game Screenshot.png" alt="Project 6" />
@@ -163,9 +166,9 @@
       <h2>Hardware Jobs and Experiences</h2>
       <div class="hardware-videos">
         <div class="video">
-          <h3>Samusung Galaxy A750 Refurbishment</h3>
-          <iframe src="https://www.youtube.com/embed/FlgNxv2I1N0?si=eeAJOx8p8fWBGWyy"
-            title="YouTube video player" frameborder="0"
+          <h3 id="break">Samusung Galaxy A750 Refurbishment</h3>
+          <iframe src="https://www.youtube.com/embed/FlgNxv2I1N0?si=eeAJOx8p8fWBGWyy" title="YouTube video player"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
           <!-- <video  controls>
@@ -178,8 +181,7 @@
 
         <div class="video">
           <h3> Tecno Camon 15 Premier Screen Replacement</h3>
-          <iframe src="https://www.youtube.com/embed/Qe4tKWuYs-I" title="February 28, 2024"
-            frameborder="0"
+          <iframe src="https://www.youtube.com/embed/Qe4tKWuYs-I" title="February 28, 2024" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
           <!-- <video  controls>
@@ -216,6 +218,29 @@
         <p><a href="waiokyere3@outlook.com" type="Email"><span><i class="fa-solid fa-envelope"></i></span>
             waiokyere3@outlook.com</a></p>
         <p><a href="+233 545154225" type="Phone"> <span><i class="fa-solid fa-phone"></i></span> +233 545154225 </a></p>
+       
+        <div class="social">
+          <div class="icon">
+              <a href="https://www.facebook.com/samuelwai.okyere?mibextid=ZbWKwL" ><i class="fa-brands fa-facebook-f"></i></a> 
+          </div>
+
+          <div class="icon">
+             <a href="https://x.com/waiokyere3?t=Fb4FwQskFNCZO4pVRFsU_w&s=09"><i class="fa-brands fa-x-twitter"></i></a>                     
+          </div>
+
+          <div class="icon">
+             <a href="https://www.instagram.com/waiokyere?igsh=MXQxN2pxZWUwNmdmdw=="> <i class="fa-brands fa-instagram"></i></a>
+          </div>
+
+          <div class="icon">
+              <a href="https://www.tiktok.com/@kwamewai?_r=1&_d=e8cka86ig5m9jd&sec_uid=MS4wLjABAAAAu7rbfNouL4RzcMN-Xd9HqakqycaBglzk69Fso0I5q3GSNerEspPJitxPV7B7aTqq&share_author_id=6843978298998752262&sharer_language=en&source=h5_m&u_code=dd6lfkmgll379l&timestamp=1705505247&user_id=6843978298998752262&sec_user_id=MS4wLjABAAAAu7rbfNouL4RzcMN-Xd9HqakqycaBglzk69Fso0I5q3GSNerEspPJitxPV7B7aTqq&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7310001852925183750&share_link_id=195d142a-5c3a-4b56-8da1-143aaa2fde90&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb0229&social_share_type=5&enable_checksum=1"> <i class="fa-brands fa-tiktok"></i> </a>
+          </div>
+
+          <div class="icon">
+              <a href="https://www.linkedin.com/in/samuel-wai-okyere-0a344a251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+
+      </div>
       </div>
     </div>
 
@@ -232,11 +257,11 @@
         </div>
       </div>
     </div>
-  </footer>
   <script src="https://dashboard.chatfuel.com/integration/landing-wa-widget.js" async defer
-    data-prefilled="Hey, I have a question." data-welcome="Hello, send me a message."
-    data-phone="+233545154225"></script>
-
+    data-prefilled="Hey, I have an offer for you. Let's do business." data-welcome="Hello, send me a message."
+    data-phone="+233545154225">
+  </script>
+  </footer>
 
   <script src="./scripts/portfolio.js"></script>
 </body>

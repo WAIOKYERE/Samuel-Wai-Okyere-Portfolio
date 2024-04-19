@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html{
+  overflow-x: hidden;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -39,7 +42,7 @@ body {
 }
 
 header {
-  background-color:#06bef9;
+  background-color: #06bef9;
   padding: 0px;
   width: 100%;
   position: sticky;
@@ -241,6 +244,7 @@ input:checked + .slider:before {
 }
 
 .container .comment_1 .button {
+  width: 150px;
   color: rgb(255, 255, 255);
   background-color: rgba(192, 1, 255, 0.849);
   text-align: center;
@@ -272,7 +276,7 @@ input:checked + .slider:before {
 }
 
 .container .about-content img {
-  width: 400px;
+  width: 300px;
   background-color: transparent;
 }
 .container .about-content .about-text {
@@ -283,7 +287,7 @@ input:checked + .slider:before {
 }
 
 .section {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .section h2 {
@@ -300,8 +304,12 @@ input:checked + .slider:before {
   text-align: center;
 }
 
+.portfolio-item h3 {
+  color: red;
+}
+
 .portfolio-item a {
-  color: rgb(4, 0, 255);
+  color: rgba(38, 35, 228, 0.938);
 }
 
 .portfolio-item img {
@@ -334,10 +342,18 @@ iframe {
   border-radius: 10px;
 }
 
+.contactContent .linkUp {
+  text-align: left;
+}
+
 .contactContent .linkUp a {
   margin: auto;
   text-decoration: none;
   color: #1809e9;
+}
+
+.contactContent .linkUp a:hover {
+  color: rgb(151, 79, 79);
 }
 
 .contactContent .contactMessage {
@@ -347,6 +363,14 @@ iframe {
   font-size: 1.3rem;
   line-height: 1.4;
   font-family: "Roboto", sans-serif;
+}
+.social{
+  display: flex;
+  gap: 20px;
+}
+
+.social .icon a:hover{
+  color: rgb(151, 79, 79);
 }
 
 .fa-envelope,
@@ -485,7 +509,7 @@ footer {
   }
 
   .container .about-content img {
-    width: 500px;
+    width: 300px;
   }
 
   .container .about-content .about-text {
@@ -526,7 +550,7 @@ footer {
   }
 
   nav ul {
-    background-color: #e9cd32f3;
+    background-color: #87d9f5f5;
     width: 100%;
     height: 200px;
   }
@@ -571,7 +595,7 @@ footer {
   }
 
   header {
-    background-image: url(../Resources/Images/gold\ bg\ 2.jpg);
+    background-color: #06bef9;
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -592,11 +616,11 @@ footer {
     flex-direction: column;
     height: 900px;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 50px;
   }
 
   .container .about-content img {
-    width: 350px;
+    width: 300px;
   }
 
   .container .about-content .about-text {
@@ -626,8 +650,8 @@ footer {
   }
 
   footer {
-    background-image: url(../Resources/Images/gold\ bg\ 2.jpg);
-    background-size: cover;
+    width: 100%;
+    background-color: #06bef9;
   }
 
   .footer-content {
@@ -647,52 +671,55 @@ footer {
 
 @media all and (max-width: 458px) {
   .container {
-    margin-right: 20px !important;
-  }
-
-  .switch {
-    width: 20%;
-    height: 30px;
+    margin-right: 20px;
   }
 
   .hero .container .hero-content .hero-message {
-    height: 900px !important;
+    height: 1000px;
     flex-direction: column;
     width: 100%;
-    padding: 10px !important;
+    padding: 10px;
   }
 
   .hero .container .hero-content .hero-message .text {
-    width: 100% !important;
+    width: 90%;
     order: 2;
   }
 
   .hero .container .hero-content .hero-message img {
-    width: 250px !important;
-    order: -1px !important;
-    margin: auto !important;
+    width: 250px;
+    order: -1px;
+  }
+
+  .container .comment_1 .marginLeft {
+    margin-left: 0px;
+  }
+
+  .container .comment_1 .btnContainer {
+    width: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    gap: 5px;
   }
 
   .container .about-content {
-    height: 1150px !important;
+    height: 1300px;
   }
 
   .container .about-content img {
-    width: 250px !important;
-  }
-
-  .hardware-videos {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     width: 250px;
-
-    video,
+  }
+    
+     video,
     iframe {
-      width: 300px;
-      height: 315px;
+      width: 350px;
+      height: 250px;
     }
 
+   
     .contactContent {
       flex-direction: column;
       width: 80%;
@@ -701,5 +728,55 @@ footer {
       padding-top: 20px;
       text-align: center;
     }
+
+    .footer-image img {
+      margin-right: 40px !important ;
+    }
+  }
+
+
+@media all and (max-width: 400px) {
+  .container {
+    margin-right: 0px;
+  }
+
+  .container .about-content {
+    height: 1350px;
+  }
+
+  .hardware-videos {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+   }
+
+   video,
+   iframe {
+     width: 300px;
+     height: 250px;
+   }
+
+
+  .footer-image img {
+    margin-right: 60px !important ;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .hero .container .hero-content .hero-message {
+    height: 1100px;
+  }
+
+  .container .about-content {
+    height: 1450px;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .hero .container .hero-content .hero-message {
+    height: 1100px;
+  }
+
+  .container .about-content {
+    height: 1600px;
   }
 }
